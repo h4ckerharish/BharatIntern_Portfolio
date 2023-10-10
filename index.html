@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harish N - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f2f2f2;
+        }
+        .mainnavbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 0 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .mainnavbar .logo img {
+            width: 100px;
+        }
+        .mainnavbar .navlinks {
+            display: flex;
+            justify-content: space-between;
+            width: 30%;
+        }
+        .mainnavbar .navlinks li {
+            list-style: none;
+        }
+        .mainnavbar .navlinks li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .mainnavbar .navlinks li a:hover {
+            color: #00bfa6;
+        }
+        .sect1{
+            background-image: url("res/bg.jpg");
+            height: 90vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .sect1 .NameAndPic {
+            width: 80%;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 50px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            margin-top: 50px;
+        }
+        .NameAndPic .Name {
+            width: 50%;
+        }
+        .NameAndPic .Name h1 {
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .NameAndPic .Name h2 {
+            font-family:'Times New Roman', Times, serif ;
+            font-size: 30px;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-weight: 500;
+            color: #f60000;
+        }
+        .NameAndPic .Pic img {
+            width: 300px;
+            border-radius: 50%;
+        }
+        .Sect2 {
+            background-image: url("res/about.png");
+            height: 90vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .AboutMeContent {
+            font-size: 80px;
+            color: #fff;
+            text-align: center;
+        }
+        .Sect2 .AboutMe {
+            
+            height: 70%;
+            width: 80%;
+            background-color: rgba(255, 255, 255, 0.5);
+            padding: 50px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 50px;
+            margin-top: 50px;
+        }
+        .Sect2 .AboutMe .AboutMeContent {
+            width: 50%;
+        }
+        .Sect2 .AboutMe .AboutMeContent h1 {
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .Sect2 .AboutMe .AboutMeContent p {
+            line-height: 40px;
+            letter-spacing: -1px;
+            font-variant: small-caps;
+            font-size: 30px;
+            font-weight: 500;
+            color: #ffea08;
+        }
+        .Sect2 .AboutMe .AboutMePic img {
+            width: 300px;
+            border-radius: 50%;
+        }
+        /**/
+        .Projects {
+            padding: 0 50px;
+            margin-top: 50px;
+        }
+        .Projects h1 {
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .Projects .Project1 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .Projects .Project1 img {
+            width: 30%;
+        }
+        .Projects .Project1 .ProjectContent {
+            width: 60%;
+        }
+        .Projects .Project1 .ProjectContent h2 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .Projects .Project1 .ProjectContent h3 {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        .Projects .Project1 .ProjectContent p {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        .Projects .Project1 .ProjectContent a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #00bfa6;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .Projects .Project1 .ProjectContent a:hover {
+            background-color: #fff;
+            color: #00bfa6;
+        }
+
+
+        .Internships {
+            padding: 0 50px;
+            margin-top: 50px;
+        }
+        .Internships h1 {
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .Internships table {
+            align-items: center;
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .Internships table tr th {
+            font-size: 20px;
+            font-weight: 500;
+            padding: 10px 0;
+            border-bottom: 1px solid #000;
+        }
+        .Internships table tr td {
+            font-size: 20px;
+            font-weight: 500;
+            padding: 10px 0;
+            border-bottom: 1px solid #000;
+        }
+        .Internships table tr td a {
+            text-decoration: none;
+            color: #fff;
+            background-color: #00bfa6;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 20px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .Internships table tr td a:hover {
+            background-color: #fff;
+            color: #00bfa6;
+        }      
+        .Skills {
+            padding: 0 50px;
+            margin-top: 50px;
+        }
+        .Skills h1 {
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .Skills .SkillsContent {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .Skills .SkillsContent .Skill {
+            width: 20%;
+        }
+        .Skills .SkillsContent .Skill h2 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .Skills .SkillsContent .Skill progress {
+            width: 100%;
+            height: 30px;
+            border: none;
+            border-radius: 5px;
+        }
+        .ContactMe {
+            padding: 0 50px;
+            margin-top: 50px;
+        }
+        .ContactMe h1 {
+            font-size: 50px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        .ContactMe form {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .ContactMe form label {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        .ContactMe form input[type="text"],
+        .ContactMe form input[type="email"],
+        .ContactMe form textarea {
+            width: 50%;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .ContactMe form input[type="submit"] {
+            width: 50%;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #00bfa6;
+            color: #fff;
+            font-size: 20px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .ContactMe form input[type="submit"]:hover {
+            background-color: #fff;
+            color: #00bfa6;
+        }
+        
+        .Footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #fff;
+            padding: 0 50px;
+            margin-top: 50px;
+        }
+        .Footer .SocialMedia a {
+            margin-right: 20px;
+        }
+        .Footer .SocialMedia a img {
+            width: 50px;
+        }
+        .Footer p {
+            font-size: 20px;
+            font-weight: 500;
+        }
+    </style>
+
+</head>
+<body>
+    <nav class="mainnavbar">
+        <div class="logo">
+            <img src="res/logowhite.png" alt="logo image">
+        </div>
+        <ul class="navlinks">
+            <li><a href="#sect1">Home</a></li>
+            <li><a href="#sect2">About Me</a></li>
+            <li><a href="#sect3">Projects</a></li>
+            <li><a href="#sect4">Internships</a></li>
+            <li><a href="#sect5">Skills</a></li>
+            <li><a href="#sect6">Contact Me</a></li>
+        </ul>
+    </nav>
+    <section class="sect1">
+    <div class="NameAndPic">
+        <div class="Name">
+            <h1>Harish N</h1>
+            <h2>Student | Programmer |<br> Cyber Security Enthusiast </h2>
+        </div>
+        <div class="Pic">
+            <img src="res/profilepic.jpg" alt="profile pic">
+        </div>
+    </div>
+    </section>
+    <!--About me content in p tag with photo in shape svg-->
+    <section class="Sect2" id="sect2">
+    <div class="AboutMe">
+        <div class="AboutMeContent">
+            <h1>About Me</h1>
+            <p>Hello, I'm Harish N, a passionate individual interested in the field of Cyber Security.
+                I hold a Bachelor of Computer Applications degree from BITS HI TECH COLLEGE, affiliated with Davangere University.
+                My educational journey has equipped me with a strong foundation in Computer Science. </p>
+        </div>
+        <div class="AboutMePic">
+            <img src="res/profilepic.jpg" alt="about me pic">
+        </div>
+    </div>
+    </section>
+    <!--Projects with View Button with photo-->
+    <section class="sect3" id="sect3">
+    <div class="Projects">
+        <h1>Projects</h1>
+        <div class="Project1">
+            <img src="res/Project1.png" alt="project 1 pic">
+            <div class="ProjectContent">
+                <h2>URL Shortener</h2>
+                <h3>Intern @CodeClause</h3>
+                <p>URL Shortener using Python. This Project made during the internship @CodeClause. Python Development Intern (September 2023)</p>
+                <a href="https://github.com/h4ckerharish/CodeClauseInternship_URL_Shortener">View</a>
+            </div>
+        </div>
+        <div class="Project1">
+            <img src="res/project2.png" alt="project 2 pic">
+            <div class="ProjectContent">
+                <h2>Music Player</h2>
+                <h3>Intern @CodeClause</h3>
+                <p>A simple and interactive music player built using Python and Tkinter. This music player allows you to play and manage your music collection, featuring play, pause, stop, next, previous, shuffle, repeat, and open folder functionalities.</p>
+                <a href="#">View</a>
+            </div>
+        </div>
+        <div class="Project1">
+            <img src="res/project3.png" alt="project 3 pic">
+            <div class="ProjectContent">
+                <h2>Plagiarism Checker</h2>
+                <p>Plagiarism Checker is a simple Python application built with PyQt5 and PyMuPDF that allows you to compare text content between two files, including PDF and text files, and determine the similarity percentage.</p>
+                <a href="#">View</a>
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--List of Internships with Comapy Name and position adding link to certificates-->
+    <section class="sect4" id="sect4">
+    <div class="Internships">
+        <h1>
+            Internships
+        </h1>
+        <table>
+            <tr>
+                <th>Company</th>
+                <th>Position</th>
+                <th>Certificate</th>
+            </tr>
+            <tr>
+                <td>Spark Foundation</td>
+                <td>Full Stack Development Intern</td>
+                <td><a href="#">View</a></td>
+            </tr>
+            <tr>
+                <td>CodeClause</td>
+                <td>Web Development Intern</td>
+                <td><a href="#">View</a></td>
+            </tr>
+            <tr>
+                <td>Bhart Intern</td>
+                <td>Web Development Intern</td>
+                <td><a href="#">View</a></td>
+            </tr>
+            </table>
+    </div>
+    </section>
+
+    <!--Skills with progress bar-->
+    <section class="sect5" id="sect5">
+    <div class="Skills">
+        <h1>Skills</h1>
+        <div class="SkillsContent">
+            <div class="Skill">
+                <h2>HTML</h2>
+                <progress value="90" max="100"></progress>
+            </div>
+            <div class="Skill">
+                <h2>CSS</h2>
+                <progress value="80" max="100"></progress>
+            </div>
+            <div class="Skill">
+                <h2>JavaScript</h2>
+                <progress value="70" max="100"></progress>
+            </div>
+            <div class="Skill">
+                <h2>PHP</h2>
+                <progress value="60" max="100"></progress>
+            </div>
+            <div class="Skill">
+                <h2>Python</h2>
+                <progress value="50" max="100"></progress>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section class="sect6" id="sect6">
+    <!--Contact Me-->
+    <div class="ContactMe">
+        <h1>Contact Me</h1>
+        <form action="mailto:
+        harishn@example.com?subject=Hello%20from%20my%20website&body=Message%2
+        0goes%20here" method="post" enctype="text/plain">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email">
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+    </section>
+    <section class="footer">
+        <!--Footer section with social media icons and copyright text-->
+        <div class="Footer">
+            <div class="SocialMedia">
+                <a href="www.instagram.com/boss._of_devils"><img src="res/insta.png" alt="instagram icon"></a>
+                <a href="https://www.linkedin.com/"><img src="res/linkicon.png" alt="linkedin icon"></a>
+                <a href="google.com"><img src="res/twit.png" alt="twitter icon"></a>
+                <a href="google.com"><img src="res/githubicon.png" alt="github"></a>
+            </div>
+            <p>Created by Harish N</p>
+        </div>
+    </section>
+        <script src="script.js"></script>
+
+    </body>
+</html>
